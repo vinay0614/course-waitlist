@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "a5e65165-419c-453e-8048-04ec6e6818ba",
+		"name": "Course Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26621346"
+	},
+	"item": [
+		{
+			"name": "get-offerings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/offerings/CS201",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offerings",
+						"CS201"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "successful-course-enroll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"learnerId\": \"L101\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/offerings/JAVA-ADV-2026-SEM1/enroll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offerings",
+						"JAVA-ADV-2026-SEM1",
+						"enroll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reject-course-enroll-no-prerequisite",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"learnerId\": \"L102\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/offerings/JAVA-ADV-2026-SEM1/enroll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offerings",
+						"JAVA-ADV-2026-SEM1",
+						"enroll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reject-course-enroll-inactive-student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"learnerId\": \"L103\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/offerings/JAVA-ADV-2026-SEM1/enroll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offerings",
+						"JAVA-ADV-2026-SEM1",
+						"enroll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Second-succesfull-course-enroll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"learnerId\": \"L104\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/offerings/JAVA-ADV-2026-SEM1/enroll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offerings",
+						"JAVA-ADV-2026-SEM1",
+						"enroll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course-enroll-waitlist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"learnerId\": \"L105\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/offerings/JAVA-ADV-2026-SEM1/enroll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offerings",
+						"JAVA-ADV-2026-SEM1",
+						"enroll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course-enrollment-deletion",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/offerings/JAVA-ADV-2026-SEM1/enrollments/L105",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"offerings",
+						"JAVA-ADV-2026-SEM1",
+						"enrollments",
+						"L105"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,8 @@
+[
+  {"learnerId":"L101","completedPrerequisites":["JAVA-FUNDAMENTALS"],"activeStudent":true},
+  {"learnerId":"L102","completedPrerequisites":[],"activeStudent":true},
+  {"learnerId":"L103","completedPrerequisites":["JAVA-FUNDAMENTALS"],"activeStudent":false},
+  {"learnerId":"L104","completedPrerequisites":["JAVA-FUNDAMENTALS"],"activeStudent":true},
+  {"learnerId":"L105","completedPrerequisites":["JAVA-FUNDAMENTALS"],"activeStudent":true},
+  {"learnerId":"L106","completedPrerequisites":["JAVA-FUNDAMENTALS"],"activeStudent":true}
+]
